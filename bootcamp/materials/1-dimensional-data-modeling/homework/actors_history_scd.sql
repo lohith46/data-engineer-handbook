@@ -1,12 +1,13 @@
 drop table actors_history_scd;
-CREATE TABLE actors_history_scd (
-    actorid TEXT,
-    actor TEXT,
+CREATE TABLE actors_history_scd
+(
+    actorid       TEXT,
+    actor         TEXT,
     quality_class quality_class,
-    is_active BOOLEAN,
-    start_year INTEGER,
-    end_year INTEGER,
-    current_year INTEGER,
+    is_active     BOOLEAN,
+    start_year    INTEGER,
+    end_year      INTEGER,
+    current_year  INTEGER,
     PRIMARY KEY (actorid, current_year)
 )
 
